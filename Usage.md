@@ -2,7 +2,7 @@
 
 **Language:** **English** | [中文](使用说明.md)
 
-Version: zh_2026.10.07.7  
+Version: zh_2026.10.10.1  
 Maintainer: zhihuikeji  
 Systems: Windows 10 and Windows 11
 
@@ -10,8 +10,8 @@ Download the installer or the portable package from the release page. Use one of
 
 | File | Purpose |
 |------|---------|
-| [WinTabsGo-zh_2026.10.07.7.msi](https://github.com/zhihuikeji007/WinTabsGo/releases/download/zh_2026.10.07.7/WinTabsGo-zh_2026.10.07.7.msi) | Installer. The default folder is `C:\Program Files\WinTabsGo` |
-| [WinTabsGo-zh_2026.10.07.7.zip](https://github.com/zhihuikeji007/WinTabsGo/releases/download/zh_2026.10.07.7/WinTabsGo-zh_2026.10.07.7.zip) | Portable package. Unzip it and run `WinTabsGo.exe` |
+| [WinTabsGo-zh_2026.10.10.1.msi](https://github.com/zhihuikeji007/WinTabsGo/releases/download/zh_2026.10.10.1/WinTabsGo-zh_2026.10.10.1.msi) | Installer. The default folder is `C:\Program Files\WinTabsGo` |
+| [WinTabsGo-zh_2026.10.10.1.zip](https://github.com/zhihuikeji007/WinTabsGo/releases/download/zh_2026.10.10.1/WinTabsGo-zh_2026.10.10.1.zip) | Portable package. Unzip it and run `WinTabsGo.exe` |
 | `README.md` | Release notes in Chinese. English is `README_English.md` |
 | `Usage.md` | This file. Chinese is `使用说明.md` |
 | `version.md` | Changelog in Chinese. English is `version_English.md` |
@@ -22,15 +22,15 @@ The portable zip also contains the Chinese and English notes, `LICENSE.txt`, and
 
 ## Installer
 
-1. Double-click `WinTabsGo-zh_2026.10.07.7.msi`.
+1. Double-click `WinTabsGo-zh_2026.10.10.1.msi`.
 2. Finish the wizard.
 3. Start WinTabsGo from the Start menu or the desktop shortcut.
 
-Windows records the installer version as `26.10.07.7`. The tray icon and the Settings window show `zh_2026.10.07.7`. Windows Installer only accepts a numeric version.
+Windows records the installer version as `26.10.10.1`. The tray icon and the Settings window show `zh_2026.10.10.1`. Windows Installer only accepts a numeric version.
 
 ## Portable package
 
-1. Unzip `WinTabsGo-zh_2026.10.07.7.zip` into a folder you can write to.
+1. Unzip `WinTabsGo-zh_2026.10.10.1.zip` into a folder you can write to.
 2. Run `WinTabsGo.exe` in that folder.
 3. Keep the `Settings` folder beside the exe. It holds the languages and the shipped defaults. Do not copy the exe alone.
 

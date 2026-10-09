@@ -2,9 +2,14 @@
 
 **Language:** **English** | [中文](version.md)
 
-Version zh_2026.10.07.7. Maintainer: zhihuikeji.
+Version zh_2026.10.10.1. Maintainer: zhihuikeji.
 
-This file records only what zh_2026.10.07.7 adds and fixes on top of upstream WindowTabs (through ss_2026.09.21; original author Maurice Flanagan; ss_ line maintained by Satoshi Yamamoto). It does not include the upstream changelog.
+This file records only what zh_2026.10.10.1 adds and fixes on top of upstream WindowTabs (through ss_2026.09.21; original author Maurice Flanagan; ss_ line maintained by Satoshi Yamamoto). It does not include the upstream changelog.
+
+## version zh_2026.10.10.1
+
+- Fixed a multi-second freeze when rapidly switching tabs while an app is fullscreen and a sibling Remote Desktop is stretched to cover the screen (non-exclusive). Root cause: when WinTabsGo moved the Remote Desktop from a fullscreen rectangle to the work area, the resulting window move was misread as the user exiting exclusive fullscreen, which scheduled five settle passes that moved the Remote Desktop again — a feedback loop. A resize grace period is now armed around every WinTabsGo-initiated Remote Desktop move; moves during that window only update the fullscreen snapshot and never trigger the exclusive-exit path. The same grace guard is applied to both top-window and background-window location-change handlers via one shared helper, and a never-called method was removed.
+- Fixed the "exit exclusive first" warning appearing on a plain tab click inside Remote Desktop exclusive fullscreen. The warning is meant for dragging only (dragging in exclusive mode splits the layout), but it fired on mouse-down. The exclusive check is now deferred until a drag actually begins (mouse moved past the detection threshold); a plain click no longer warns.
 
 ## version zh_2026.10.07.7
 
