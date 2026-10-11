@@ -2,9 +2,13 @@
 
 **Language:** **English** | [中文](version.md)
 
-Version zh_2026.10.10.1. Maintainer: zhihuikeji.
+Version zh_2026.10.10.2. Maintainer: zhihuikeji.
 
-This file records only what zh_2026.10.10.1 adds and fixes on top of upstream WindowTabs (through ss_2026.09.21; original author Maurice Flanagan; ss_ line maintained by Satoshi Yamamoto). It does not include the upstream changelog.
+This file records only what zh_2026.10.10.2 adds and fixes on top of upstream WindowTabs (through ss_2026.09.21; original author Maurice Flanagan; ss_ line maintained by Satoshi Yamamoto). It does not include the upstream changelog.
+
+## version zh_2026.10.10.2
+
+- Fixed the "exit exclusive first" warning appearing on within-group tab reordering in exclusive fullscreen. Previously the exclusive check fired at drag-begin (mouse moved past the detection threshold), which also blocked simple reordering. The check is now deferred to the moment the mouse tries to leave the source strip bounds: within-group reordering never leaves the bounds, so it never triggers the check; only dragging out of the strip warns and blocks in exclusive mode, while non-exclusive mode proceeds normally.
 
 ## version zh_2026.10.10.1
 
