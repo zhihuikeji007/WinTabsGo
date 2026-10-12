@@ -2,9 +2,13 @@
 
 **Language:** **English** | [中文](version.md)
 
-Version zh_2026.10.10.2. Maintainer: zhihuikeji.
+Version zh_2026.10.13.1. Maintainer: zhihuikeji.
 
-This file records only what zh_2026.10.10.2 adds and fixes on top of upstream WindowTabs (through ss_2026.09.21; original author Maurice Flanagan; ss_ line maintained by Satoshi Yamamoto). It does not include the upstream changelog.
+This file records only what zh_2026.10.13.1 adds and fixes on top of upstream WindowTabs (through ss_2026.09.21; original author Maurice Flanagan; ss_ line maintained by Satoshi Yamamoto). It does not include the upstream changelog.
+
+## version zh_2026.10.13.1
+
+- Fixed switching to a browser tab, uploading a photo, and landing back on the previous tab. A tab click now makes that window the real foreground window. While a file dialog owned by a group window is open, the current tab is not taken from the temporary Z-order, and if closing the dialog activates a different tab, focus returns to the window that opened the dialog.
 
 ## version zh_2026.10.10.2
 

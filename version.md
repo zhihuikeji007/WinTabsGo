@@ -2,9 +2,13 @@
 
 **语言：** **中文** | [English](version_English.md)
 
-版本 zh_2026.10.10.2。维护者 zhihuikeji。
+版本 zh_2026.10.13.1。维护者 zhihuikeji。
 
-本文件只记录 zh_2026.10.10.2 在上游 WindowTabs（至 ss_2026.09.21，原作者 Maurice Flanagan，ss_ 线维护者 Satoshi Yamamoto）之上新增和修复的内容，不含上游逐版历史。
+本文件只记录 zh_2026.10.13.1 在上游 WindowTabs（至 ss_2026.09.21，原作者 Maurice Flanagan，ss_ 线维护者 Satoshi Yamamoto）之上新增和修复的内容，不含上游逐版历史。
+
+## version zh_2026.10.13.1
+
+- 修复从别的窗口切到浏览器、点击上传照片后自动跳回上一个标签的问题。标签栏点击现在会真正把目标窗口设为前台；文件对话框打开期间不再按临时 Z 序改当前标签，对话框关掉后若焦点落到别的标签，会回到打开对话框的那个窗口。
 
 ## version zh_2026.10.10.2
 
